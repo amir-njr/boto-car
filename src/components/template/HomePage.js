@@ -11,7 +11,7 @@ const HomePage = () => {
       <SearchBox />
       <CarType />
 
-      <section className="grid grid-cols-4 gap-5">
+      <section className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5">
         {carsData.map((car) => (
           <Card key={car.id} {...car} />
         ))}
